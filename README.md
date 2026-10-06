@@ -71,3 +71,6 @@ Toda la documentación del proyecto está en la carpeta [`Docs`](Docs):
 ## Autor
 
 [@MauroGins](https://github.com/MauroGins)
+
+## Actualizaciones
+- 6 de Octubre de 2026
