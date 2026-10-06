@@ -70,7 +70,7 @@
 |-------------------------|------------------------------------------|-----------------|
 | Inicio                  | Registro                                 | (arranque)      |
 | Lista de la compra      | Anotaciones                              | Boton en inicio |
-| Lista de tareas (hijos) | No olvidarse de los horarios y entragas  | Boton en inicio |
+| Lista de tareas (hijos) | No olvidarse de los horarios y entregas  | Boton en inicio |
 | Calendario              | Anotar las fechas importantes para ambos | Boton en inicio |
 
 ---
@@ -94,7 +94,7 @@
 | Hijo         | Nombre, color                                                  | Pablo, Verde                                         |    
 | Actividad    | Nombre hijo, dia, hora inicio y fin, quien lleva, quien recoge | Pablo natacion viernes 16.00 recoge papá, lleva mamá |    
 | Alarma       | Actividad para avisar con antelación                           | Cumpleaños Abuela 10/10/2026                         |    
-| Merienda     | dia semana, hombre hijo, seleccion                             | Pablo lunes lacteo,                                  |    
+| Merienda     | dia semana, nombre hijo, selección                             | Pablo lunes lacteo,                                  |    
 
 
 ---
@@ -106,7 +106,7 @@
 
 | Requisito | Dónde encaja en tu app                                                                                                | Tema |
 |-----------|-----------------------------------------------------------------------------------------------------------------------|------|
-| **Persistencia de datos** — la información sobrevive al cerrar la app | En las listas de productos o actividades, en fechas importantes, o en alamras vinculadas                              | 4 |
+| **Persistencia de datos** — la información sobrevive al cerrar la app | En las listas de productos o actividades, en fechas importantes, o en alarmas vinculadas                              | 4 |
 | **Servicio web** — la app consulta datos por internet | Sincronizando los datos con algun servidor de alojamiento para que puedan ser compartidos a tiempo real con la pareja | 5 |
 | **Sensor o localización** | Para avisar al llegar a un sitio o al supermercado "habitual": "Recordatorio, compra XXX"                             | 6 |
 | **Contenido multimedia** — foto, audio, vídeo o animación | Posibilidad de agregar una foto para avisar de "recogido", o ·este yogurt"                                             | 7 |
