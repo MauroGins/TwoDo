@@ -1,0 +1,66 @@
+com.example.twodo.app-core-1.17.0-0 C:\Users\Mauro\.gradle\caches\8.13\transforms\1311342495c40aa0ffb93b3795420d30\transformed\core-1.17.0\res
+com.example.twodo.app-foundation-release-1 C:\Users\Mauro\.gradle\caches\8.13\transforms\13c5f792340eff1cb84b023ec1d2ac37\transformed\foundation-release\res
+com.example.twodo.app-activity-compose-1.9.3-2 C:\Users\Mauro\.gradle\caches\8.13\transforms\227666e85114206b81c55692a934b705\transformed\activity-compose-1.9.3\res
+com.example.twodo.app-emoji2-views-helper-1.3.0-3 C:\Users\Mauro\.gradle\caches\8.13\transforms\2aa923bab532b4ec1975fb3d0dd14dce\transformed\emoji2-views-helper-1.3.0\res
+com.example.twodo.app-fragment-1.3.6-4 C:\Users\Mauro\.gradle\caches\8.13\transforms\2acad5237e157bd6aab22291d2b592c6\transformed\fragment-1.3.6\res
+com.example.twodo.app-ui-tooling-release-5 C:\Users\Mauro\.gradle\caches\8.13\transforms\32bb52d7102e3e61ce268a02b19c498d\transformed\ui-tooling-release\res
+com.example.twodo.app-lifecycle-viewmodel-savedstate-2.8.7-6 C:\Users\Mauro\.gradle\caches\8.13\transforms\33b20bf6e40a1be10eb94234a29201f4\transformed\lifecycle-viewmodel-savedstate-2.8.7\res
+com.example.twodo.app-material-ripple-release-7 C:\Users\Mauro\.gradle\caches\8.13\transforms\360a29d634b1006ca18b7fd9698cb7ce\transformed\material-ripple-release\res
+com.example.twodo.app-coordinatorlayout-1.1.0-8 C:\Users\Mauro\.gradle\caches\8.13\transforms\3948e970a5d35a6cfd8f1d8d0e8a75fc\transformed\coordinatorlayout-1.1.0\res
+com.example.twodo.app-appcompat-resources-1.6.1-9 C:\Users\Mauro\.gradle\caches\8.13\transforms\4352865edd98e8527331822d9a8faf6b\transformed\appcompat-resources-1.6.1\res
+com.example.twodo.app-savedstate-ktx-1.2.1-10 C:\Users\Mauro\.gradle\caches\8.13\transforms\49bf7bc2182d9a069bac7fc10336b630\transformed\savedstate-ktx-1.2.1\res
+com.example.twodo.app-animation-core-release-11 C:\Users\Mauro\.gradle\caches\8.13\transforms\49d7d2041becb10b8a5c5e7a7eefcdf2\transformed\animation-core-release\res
+com.example.twodo.app-ui-tooling-preview-release-12 C:\Users\Mauro\.gradle\caches\8.13\transforms\511332ae4f0a10c861dab01ef7f6b669\transformed\ui-tooling-preview-release\res
+com.example.twodo.app-foundation-layout-release-13 C:\Users\Mauro\.gradle\caches\8.13\transforms\54d6860a2b8db4cc6f7603bb67ded860\transformed\foundation-layout-release\res
+com.example.twodo.app-recyclerview-1.1.0-14 C:\Users\Mauro\.gradle\caches\8.13\transforms\554c1e78ad173ccb1cc22a08f84f3ce1\transformed\recyclerview-1.1.0\res
+com.example.twodo.app-lifecycle-runtime-compose-release-15 C:\Users\Mauro\.gradle\caches\8.13\transforms\5d4228a31b5122ae9709eb0be7325a13\transformed\lifecycle-runtime-compose-release\res
+com.example.twodo.app-core-runtime-2.2.0-16 C:\Users\Mauro\.gradle\caches\8.13\transforms\5fcf533383ac2f5759b7b6ed082814c8\transformed\core-runtime-2.2.0\res
+com.example.twodo.app-graphics-path-1.0.1-17 C:\Users\Mauro\.gradle\caches\8.13\transforms\608b4fc993763c093f3816cbb2f70e10\transformed\graphics-path-1.0.1\res
+com.example.twodo.app-customview-poolingcontainer-1.0.0-18 C:\Users\Mauro\.gradle\caches\8.13\transforms\62d7b641d78031449a0de76941fe686e\transformed\customview-poolingcontainer-1.0.0\res
+com.example.twodo.app-material-release-19 C:\Users\Mauro\.gradle\caches\8.13\transforms\63ad05dae68ade787beba02079998c3f\transformed\material-release\res
+com.example.twodo.app-ui-geometry-release-20 C:\Users\Mauro\.gradle\caches\8.13\transforms\6e2c09b7385586320060e4acc92773d6\transformed\ui-geometry-release\res
+com.example.twodo.app-lifecycle-livedata-2.8.7-21 C:\Users\Mauro\.gradle\caches\8.13\transforms\6fac342fd8097c4a17823bb2e1acea06\transformed\lifecycle-livedata-2.8.7\res
+com.example.twodo.app-lifecycle-livedata-core-ktx-2.8.7-22 C:\Users\Mauro\.gradle\caches\8.13\transforms\76be68c93d5f4a9acf64bf4e89e99b64\transformed\lifecycle-livedata-core-ktx-2.8.7\res
+com.example.twodo.app-core-ktx-1.17.0-23 C:\Users\Mauro\.gradle\caches\8.13\transforms\7a65bd170d320db7366638c79a4f1f51\transformed\core-ktx-1.17.0\res
+com.example.twodo.app-emoji2-1.3.0-24 C:\Users\Mauro\.gradle\caches\8.13\transforms\7f58c9ae44935ac1147ad88a687b8ab8\transformed\emoji2-1.3.0\res
+com.example.twodo.app-appcompat-1.6.1-25 C:\Users\Mauro\.gradle\caches\8.13\transforms\800311fea5d3f8a2775d1d40b9b845af\transformed\appcompat-1.6.1\res
+com.example.twodo.app-activity-ktx-1.9.3-26 C:\Users\Mauro\.gradle\caches\8.13\transforms\828a844838f74e23be9bd502c71c99dc\transformed\activity-ktx-1.9.3\res
+com.example.twodo.app-animation-release-27 C:\Users\Mauro\.gradle\caches\8.13\transforms\8b765fb62736f80aac02e4dc0f170f0a\transformed\animation-release\res
+com.example.twodo.app-runtime-release-28 C:\Users\Mauro\.gradle\caches\8.13\transforms\8b84c1f7a2f56e3eb8a1525a11d74683\transformed\runtime-release\res
+com.example.twodo.app-ui-text-release-29 C:\Users\Mauro\.gradle\caches\8.13\transforms\8f36e900128fc64fba161255bbab38ac\transformed\ui-text-release\res
+com.example.twodo.app-savedstate-1.2.1-30 C:\Users\Mauro\.gradle\caches\8.13\transforms\967a9aca323183bf7e25826274c85b1d\transformed\savedstate-1.2.1\res
+com.example.twodo.app-transition-1.2.0-31 C:\Users\Mauro\.gradle\caches\8.13\transforms\9fec3c76030e95977f2aeb4a390a5a47\transformed\transition-1.2.0\res
+com.example.twodo.app-material3-release-32 C:\Users\Mauro\.gradle\caches\8.13\transforms\a3224e8052be2097655bc465450bb45a\transformed\material3-release\res
+com.example.twodo.app-lifecycle-viewmodel-ktx-2.8.7-33 C:\Users\Mauro\.gradle\caches\8.13\transforms\a39b8f77b0a34a99deccb138b3ed89d8\transformed\lifecycle-viewmodel-ktx-2.8.7\res
+com.example.twodo.app-activity-1.9.3-34 C:\Users\Mauro\.gradle\caches\8.13\transforms\a45a9a77bec49bee6d435c57f87e5462\transformed\activity-1.9.3\res
+com.example.twodo.app-material-1.10.0-35 C:\Users\Mauro\.gradle\caches\8.13\transforms\a6ff9dd9b2ad5d37fbad583090952dd0\transformed\material-1.10.0\res
+com.example.twodo.app-material-icons-core-release-36 C:\Users\Mauro\.gradle\caches\8.13\transforms\a8bcc2f17c105b703599bc6ecc7f9292\transformed\material-icons-core-release\res
+com.example.twodo.app-lifecycle-viewmodel-release-37 C:\Users\Mauro\.gradle\caches\8.13\transforms\a8d93d28b460dbc9d41d1f55c7926e5d\transformed\lifecycle-viewmodel-release\res
+com.example.twodo.app-runtime-saveable-release-38 C:\Users\Mauro\.gradle\caches\8.13\transforms\afdc9300cc74e220cb7fc0107f54fd64\transformed\runtime-saveable-release\res
+com.example.twodo.app-lifecycle-livedata-core-2.8.7-39 C:\Users\Mauro\.gradle\caches\8.13\transforms\b742f9af7247b1295c944c8a6146bcb9\transformed\lifecycle-livedata-core-2.8.7\res
+com.example.twodo.app-constraintlayout-2.0.1-40 C:\Users\Mauro\.gradle\caches\8.13\transforms\b7cc1679ea7413fdd80ad1ac9c6abe02\transformed\constraintlayout-2.0.1\res
+com.example.twodo.app-annotation-experimental-1.4.1-41 C:\Users\Mauro\.gradle\caches\8.13\transforms\bef007af0933b6f063f517821ba7f7aa\transformed\annotation-experimental-1.4.1\res
+com.example.twodo.app-core-viewtree-1.0.0-42 C:\Users\Mauro\.gradle\caches\8.13\transforms\bf05b7b39efe65de4731fc963c5ceaeb\transformed\core-viewtree-1.0.0\res
+com.example.twodo.app-ui-test-manifest-1.7.6-43 C:\Users\Mauro\.gradle\caches\8.13\transforms\c3fed878ee2446b3c56ebbdb75402aa7\transformed\ui-test-manifest-1.7.6\res
+com.example.twodo.app-ui-unit-release-44 C:\Users\Mauro\.gradle\caches\8.13\transforms\c514e1886f10e2445fa4b5da31393924\transformed\ui-unit-release\res
+com.example.twodo.app-drawerlayout-1.1.1-45 C:\Users\Mauro\.gradle\caches\8.13\transforms\d05328a36de82ed347d1fc3e6755d407\transformed\drawerlayout-1.1.1\res
+com.example.twodo.app-ui-tooling-data-release-46 C:\Users\Mauro\.gradle\caches\8.13\transforms\d577345483444d16f3f644444b69d443\transformed\ui-tooling-data-release\res
+com.example.twodo.app-cardview-1.0.0-47 C:\Users\Mauro\.gradle\caches\8.13\transforms\d6f93da6cfaa7c594a2d94848c0dd8f2\transformed\cardview-1.0.0\res
+com.example.twodo.app-ui-util-release-48 C:\Users\Mauro\.gradle\caches\8.13\transforms\da68f492c34332de1d8118c7e729b91a\transformed\ui-util-release\res
+com.example.twodo.app-viewpager2-1.0.0-49 C:\Users\Mauro\.gradle\caches\8.13\transforms\dea15abaf9657324d71d339611df6dcc\transformed\viewpager2-1.0.0\res
+com.example.twodo.app-profileinstaller-1.3.1-50 C:\Users\Mauro\.gradle\caches\8.13\transforms\dfa94a4bb30b4b7cbdfc920f93e1fdf9\transformed\profileinstaller-1.3.1\res
+com.example.twodo.app-lifecycle-runtime-ktx-release-51 C:\Users\Mauro\.gradle\caches\8.13\transforms\e979ae678818a0c068733a66332bf4e0\transformed\lifecycle-runtime-ktx-release\res
+com.example.twodo.app-ui-release-52 C:\Users\Mauro\.gradle\caches\8.13\transforms\e9d5acb41b294b7e9747e13760c94a87\transformed\ui-release\res
+com.example.twodo.app-ui-graphics-release-53 C:\Users\Mauro\.gradle\caches\8.13\transforms\f5d60c28055ef952429260c8f0b0dffb\transformed\ui-graphics-release\res
+com.example.twodo.app-lifecycle-runtime-release-54 C:\Users\Mauro\.gradle\caches\8.13\transforms\f70fe2e2d92e71ce796abf1ebaebae94\transformed\lifecycle-runtime-release\res
+com.example.twodo.app-lifecycle-process-2.8.7-55 C:\Users\Mauro\.gradle\caches\8.13\transforms\f7a955c5685bd34e3377e0aa68a0625b\transformed\lifecycle-process-2.8.7\res
+com.example.twodo.app-tracing-1.2.0-56 C:\Users\Mauro\.gradle\caches\8.13\transforms\fa1fefd9be698936ae1c9b7bac59f1fe\transformed\tracing-1.2.0\res
+com.example.twodo.app-startup-runtime-1.1.1-57 C:\Users\Mauro\.gradle\caches\8.13\transforms\fbe943740b0328688a24c2217ae5626e\transformed\startup-runtime-1.1.1\res
+com.example.twodo.app-pngs-58 D:\CURSO 2024-2025\TwoDo-github\app\build\generated\res\pngs\debug
+com.example.twodo.app-resValues-59 D:\CURSO 2024-2025\TwoDo-github\app\build\generated\res\resValues\debug
+com.example.twodo.app-updated_navigation_xml-60 D:\CURSO 2024-2025\TwoDo-github\app\build\generated\updated_navigation_xml\debug
+com.example.twodo.app-packageDebugResources-61 D:\CURSO 2024-2025\TwoDo-github\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.twodo.app-packageDebugResources-62 D:\CURSO 2024-2025\TwoDo-github\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.twodo.app-debug-63 D:\CURSO 2024-2025\TwoDo-github\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.twodo.app-debug-64 D:\CURSO 2024-2025\TwoDo-github\app\src\debug\res
+com.example.twodo.app-main-65 D:\CURSO 2024-2025\TwoDo-github\app\src\main\res
