@@ -12,6 +12,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.twodo.ui.InicioScreen
 
 class MainActivity : ComponentActivity() {
 
@@ -21,8 +22,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             MaterialTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Saludo(
-                        nombre = "familia",
+                    InicioScreen(
+
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -31,15 +32,4 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Composable
-fun Saludo(nombre: String, modifier: Modifier = Modifier) {
-    Text(text = "Hola, $nombre", modifier = modifier)
-}
 
-@Preview(showBackground = true)
-@Composable
-fun SaludoPreview() {
-    MaterialTheme {
-        Saludo(nombre = "familia")
-    }
-}
