@@ -74,3 +74,5 @@ Toda la documentación del proyecto está en la carpeta [`Docs`](Docs):
 
 ## Actualizaciones
 - 6 de Octubre de 2026
+- 12 de Octubre de 2026
+  
