@@ -13,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.twodo.ui.InicioScreen
+import com.example.twodo.ui.theme.TwoDoTheme
 
 class MainActivity : ComponentActivity() {
 
@@ -20,7 +21,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            MaterialTheme {
+            TwoDoTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     InicioScreen(
 
