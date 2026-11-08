@@ -1,7 +1,7 @@
 # Modificación funcional de una app existente
 
 ## Repositorio con el código
-Hice un fork del repositorio oficial de Google y ambos tienen ahora commits. 
+Hice un fork del repositorio oficial de Google y he subido a él mis dos cambios, cada uno con su propio commit.
 [Repositorio de app modificada](https://github.com/MauroGins/compose-samples)
 
 ## Ejecución antes del cambio
