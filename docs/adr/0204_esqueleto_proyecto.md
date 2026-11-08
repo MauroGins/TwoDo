@@ -63,4 +63,4 @@ Mis commits tras las sesiones de trabajo (solo las de trabajo real no las de tra
 [Historial de commits desarrollo](https://github.com/MauroGins/TwoDo/commits/desarrollo)
 
 ## 8. Colaborador
-Mi colaborador es ProfesorPermuta, siendo añadido al repositorio con anterioridad.
+Mi colaborador es @ProfesorPermuta, siendo añadido al repositorio con anterioridad.
