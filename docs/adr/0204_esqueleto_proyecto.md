@@ -1,20 +1,4 @@
 A2.4 · Hito de proyecto: esqueleto del Proyecto A
-
-Objetivo: arrancar formalmente el desarrollo del Proyecto A definido en el tema 1.
-
-    Crea el repositorio Git del proyecto
-    Crea el proyecto en Android Studio con la estructura de paquetes que hayas decidido para tu aplicación.
-    Declara en el AndroidManifest.xml al menos la Activity de arranque.
-    Construye una pantalla inicial mínima (no hace falta que tenga toda la interfaz definitiva, solo debe compilar y ejecutarse).
-    Crea en la raiz del proyecto una carpeta llamada docs/adr donde mantendrás todos los adr solicitados a lo largo del curso. Añade aquí el adr del tema-1 y del tema-2.
-    Crea la carpeta docs/proyecto con el contenido de la plantilla del tema-1 con las especificaciones de tu proyecto, asegurate de cubrir los campos del punto 0.
-    Haz el primer commit con este esqueleto y, a partir de aquí, mantén commits regulares en cada sesión de trabajo.
-    Añade a ProfesorPermuta como colaborador de tu proyecto
-
-aviso
-
-Este hito es la base de todo lo que viene A partir de este tema, cada nueva unidad añade una capa al mismo proyecto. Un esqueleto mal organizado (paquetes desordenados, sin Git desde el principio) se paga en las unidades siguientes. Merece la pena dedicarle el tiempo necesario.
-
 # Hito de proyecto: esqueleto del Proyecto A
 
 ## 1. Repositorio Git del proyecto
