@@ -45,9 +45,12 @@ Aquí pasa por onDestroy y  al reabrir hay habia un proceso nuevo (onCreate).
 
 ## Guardar el estado con onSaveInstanceState
 Al girar la pantalla, el contador sufría un problema, y el contador volvía a 0.
+
 ![pulsacion_giro_1.PNG](../res/pulsacion_giro_1.PNG)
 ![pulsacion_giro_2.PNG](../res/pulsacion_giro_2.PNG)
+
 Se solucionó guardando con putInt y recuperando el onCreate
+
 ```
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -56,6 +59,8 @@ Se solucionó guardando con putInt y recuperando el onCreate
             contador = savedInstanceState.getInt("contador")
         }
 ```
+
 Ahora el número se mantiene. 
+
 ![estado_horizontal_1.PNG](../res/estado_horizontal_1.PNG)
 ![estado_vertical_2.PNG](../res/estado_vertical_2.PNG)
