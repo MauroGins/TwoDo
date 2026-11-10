@@ -55,7 +55,7 @@ Proyecto anual del módulo **Programación Multimedia y Dispositivos Móviles (P
 
 ## Documentación
 
-Toda la documentación del proyecto está en la carpeta [`Docs`](docs):
+Toda la documentación del proyecto está en la carpeta [`docs`](docs):
 
 - [Propuesta del proyecto](docs/proyecto/plantilla-proyecto-a.md)
 - [Comparación de tecnologías](docs/adr/0101_tech_comparasion.md)
