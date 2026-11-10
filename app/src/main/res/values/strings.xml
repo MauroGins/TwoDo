@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TwoDo</string>
+    <string name="inicio_saludo">Bienvenido a TwoDo</string>
+    <string name="inicio_hoy_titulo">HOY</string>
+    <string name="inicio_plan_1">Fútbol todos los martes</string>
+    <string name="inicio_plan_2">Inglés todos los jueves</string>
+    <string name="inicio_plan_3">Natación todos los viernes</string>
 </resources>
