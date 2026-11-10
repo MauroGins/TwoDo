@@ -80,7 +80,7 @@
 > Dibuja las pantallas principales. A mano y fotografiado es válido.
 > Pega aquí las imágenes o indica el nombre de los archivos adjuntos.
 > 
->![Bocetos de las pantallas](res/apartado6.png)
+>![apartado6.png](../res/apartado6.png)
 
 ---
 

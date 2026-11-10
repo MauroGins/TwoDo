@@ -42,7 +42,7 @@ Proyecto anual del módulo **Programación Multimedia y Dispositivos Móviles (P
 
 ## Bocetos
 
-![Bocetos de las pantallas principales](Docs/res/apartado6.png)
+![Bocetos de las pantallas principales](docs/res/apartado6.png)
 
 ## Requisitos del módulo
 
@@ -55,12 +55,12 @@ Proyecto anual del módulo **Programación Multimedia y Dispositivos Móviles (P
 
 ## Documentación
 
-Toda la documentación del proyecto está en la carpeta [`Docs`](Docs):
+Toda la documentación del proyecto está en la carpeta [`docs`](docs):
 
-- [Propuesta del proyecto](Docs/plantilla-proyecto-a.md)
-- [Comparación de tecnologías](Docs/0101_tech_comparasion.md)
-- [Plan de despliegue](Docs/0102_rollout.md)
-- [Restricciones de dispositivos](Docs/0103_device_constrains.md)
+- [Propuesta del proyecto](docs/proyecto/plantilla-proyecto-a.md)
+- [Comparación de tecnologías](docs/adr/0101_tech_comparasion.md)
+- [Plan de despliegue](docs/adr/0102_rollout.md)
+- [Restricciones de dispositivos](docs/adr/0103_device_constrains.md)
 
 ## Cómo abrirlo
 
