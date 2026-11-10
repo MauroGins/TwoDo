@@ -1,18 +1,14 @@
-package com.example.twodo.ui
+package com.example.twodo.ui.page
 
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -22,7 +18,7 @@ import java.util.Date
 import java.util.Locale
 
 @Composable
-fun InicioScreen(modifier: Modifier = Modifier) {
+fun PaginaInicio(modifier: Modifier = Modifier) {
     val fecha = SimpleDateFormat("EEEE d 'de' MMMM 'de' yyyy", Locale.forLanguageTag("es-ES")).format(Date()).replaceFirstChar{it.uppercase()}
     Column(
         modifier = modifier
@@ -57,8 +53,8 @@ fun TarjetaHoy() {
 
 @Preview(showBackground = true)
 @Composable
-fun InicioScreenPreview() {
+fun PaginaInicioPreview() {
     MaterialTheme {
-        InicioScreen()
+        PaginaInicio()
     }
 }
