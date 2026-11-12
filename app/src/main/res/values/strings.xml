@@ -5,4 +5,6 @@
     <string name="inicio_plan_1">Fútbol todos los martes</string>
     <string name="inicio_plan_2">Inglés todos los jueves</string>
     <string name="inicio_plan_3">Natación todos los viernes</string>
+    <string name="inicio_seccion_compra_titulo">Lista de la compra</string>
+    <string name="inicio_seccion_compra_sub">3 pendientes</string>
 </resources>
