@@ -1,10 +1,25 @@
 <resources>
     <string name="app_name">TwoDo</string>
+    <!--titulo y saludo-->
     <string name="inicio_saludo">Bienvenido a TwoDo</string>
     <string name="inicio_hoy_titulo">HOY</string>
+
+       <!--Compra-->
+    <string name="inicio_seccion_compra_titulo">Lista de la compra</string>
+    <string name="inicio_seccion_compra_sub">3 pendientes</string>
+
+    <!--Lista-->
     <string name="inicio_plan_1">Fútbol todos los martes</string>
     <string name="inicio_plan_2">Inglés todos los jueves</string>
     <string name="inicio_plan_3">Natación todos los viernes</string>
-    <string name="inicio_seccion_compra_titulo">Lista de la compra</string>
-    <string name="inicio_seccion_compra_sub">3 pendientes</string>
+
+    <!--Hijos-->
+    <string name="inicio_seccion_hijos_titulo">Tareas de los niños</string>
+    <string name="inicio_tareas_hijos">2 actividades hoy</string>
+
+    <!--Calendario-->
+    <string name="inicio_seccion_calendario_titulo">Calendario</string>
+    <string name="inicio_seccion_calendario_subtitulo">Cumpleaños el día 15</string>
+
+    <!--Pendiente-->
 </resources>
