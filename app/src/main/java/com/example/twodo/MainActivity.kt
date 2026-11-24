@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.example.twodo.ui.pages.PaginaInicio
+import com.example.twodo.ui.pages.PaginaListaCompra
 import com.example.twodo.ui.theme.TwoDoTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,10 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             TwoDoTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    PaginaInicio(
-
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    PaginaListaCompra(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
