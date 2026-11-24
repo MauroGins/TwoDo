@@ -1,6 +1,7 @@
 package com.example.twodo.ui.viewmodels
 
 import androidx.lifecycle.ViewModel
+import com.example.twodo.data.ProductosRepositorio
 import com.example.twodo.ui.components.FilaProductoData
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -16,12 +17,7 @@ data class ListaCompraUiState(
 class ListaCompraViewModel : ViewModel(){
     private val _uiState = MutableStateFlow(
         ListaCompraUiState(
-            productos = listOf(
-                FilaProductoData(id=1, nombre= "Leche", cantidad="x2",comprado=false),
-                FilaProductoData(id=2, nombre= "Arroz", cantidad="x1",comprado=false),
-                FilaProductoData(id=3, nombre= "Naranjas", cantidad="x4",comprado=false),
-                FilaProductoData(id=4, nombre= "Plátanos", cantidad="x4",comprado=false)
-            )
+            productos = ProductosRepositorio.obtenerTodos()
         )
     )
     val uiState: StateFlow<ListaCompraUiState> = _uiState.asStateFlow()
