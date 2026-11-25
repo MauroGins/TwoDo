@@ -21,10 +21,13 @@
     <string name="inicio_seccion_calendario_titulo">Calendario</string>
     <string name="inicio_seccion_calendario_subtitulo">Cumpleaños el día 15</string>
 
-    <!--Pendiente-->
+    <!--Extras-->
     <string name="detalle_cantidad">Cantidad: %1$s</string>
     <string name="detalle_comprado">Comprado</string>
     <string name="detalle_pendiente">Pendiente</string>
     <string name="detalle_no_encontrado">Producto no encontrado</string>
+    <string name="titulo_lista_compra">Lista de la compra</string>
+    <string name="titulo_detalle_producto">Detalle del producto</string>
+    <string name="volver">Volver</string>
 
 </resources>
