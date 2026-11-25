@@ -29,5 +29,9 @@
     <string name="titulo_lista_compra">Lista de la compra</string>
     <string name="titulo_detalle_producto">Detalle del producto</string>
     <string name="volver">Volver</string>
+    <string name="titulo_formulario_producto">Añadir producto</string>
+    <string name="formulario_nombre">Nombre</string>
+    <string name="formulario_cantidad">Cantidad</string>
+    <string name="formulario_guardar">Guardar</string>
 
 </resources>
