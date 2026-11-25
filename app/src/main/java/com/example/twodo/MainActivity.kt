@@ -8,9 +8,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import com.example.twodo.ui.pages.PaginaDetalleProducto
-import com.example.twodo.ui.pages.PaginaInicio
-import com.example.twodo.ui.pages.PaginaListaCompra
+import androidx.navigation.compose.rememberNavController
+import com.example.twodo.ui.navigation.TwoDoNavGraph
 import com.example.twodo.ui.theme.TwoDoTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,8 +19,12 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             TwoDoTheme {
+                val navController = rememberNavController()
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    PaginaDetalleProducto(idProducto = 2, modifier = Modifier.padding(innerPadding))
+                    TwoDoNavGraph(
+                        navController = navController,
+                        modifier = Modifier.padding(innerPadding)
+                    )
                 }
             }
         }

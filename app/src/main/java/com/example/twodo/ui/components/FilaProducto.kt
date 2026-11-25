@@ -1,5 +1,6 @@
 package com.example.twodo.ui.components
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.Checkbox
@@ -22,10 +23,11 @@ data class FilaProductoData(
 fun FilaProducto(
     data: FilaProductoData,
     onMarcar:()-> Unit,
+    onPulsar:()-> Unit,
     modifier: Modifier = Modifier
 ){
     Row(
-        modifier= modifier.fillMaxWidth(),
+        modifier= modifier.fillMaxWidth().clickable{onPulsar()},
         verticalAlignment = Alignment.CenterVertically
     ) {
         Checkbox(
@@ -48,7 +50,8 @@ fun FilaProductoPreview() {
                 cantidad = "x2",
                 comprado = true
             ),
-            onMarcar = { }
+            onMarcar = { },
+            onPulsar = { }
         )
     }
 }

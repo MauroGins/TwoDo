@@ -17,6 +17,7 @@ import com.example.twodo.ui.components.FilaProducto
 
 @Composable
 fun PaginaListaCompra(
+    onProductoPulsado: (Int) -> Unit,
     modifier: Modifier = Modifier,
     viewModel: ListaCompraViewModel = viewModel()
 ) {
@@ -30,7 +31,8 @@ fun PaginaListaCompra(
         items(uiState.productos) {producto ->
             FilaProducto(
                 data= producto,
-                onMarcar = {viewModel.onProductoMarcado(producto.id)}
+                onMarcar = {viewModel.onProductoMarcado(producto.id)},
+                onPulsar = {onProductoPulsado(producto.id)}
             )
         }
     }

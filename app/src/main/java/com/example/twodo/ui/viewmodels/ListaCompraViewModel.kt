@@ -23,12 +23,12 @@ class ListaCompraViewModel : ViewModel(){
     val uiState: StateFlow<ListaCompraUiState> = _uiState.asStateFlow()
 
     fun onProductoMarcado(id:Int){
+        ProductosRepositorio.cambiarComprado(id)
         _uiState.update { estado ->
-            estado.copy(
-                productos = estado.productos.map{
-                    if (it.id == id) it.copy(comprado = !it.comprado) else it
-                }
-            )
+            estado.copy(productos = ProductosRepositorio.obtenerTodos())
+
+
+
         }
     }
 }
