@@ -22,4 +22,9 @@
     <string name="inicio_seccion_calendario_subtitulo">Cumpleaños el día 15</string>
 
     <!--Pendiente-->
+    <string name="detalle_cantidad">Cantidad: %1$s</string>
+    <string name="detalle_comprado">Comprado</string>
+    <string name="detalle_pendiente">Pendiente</string>
+    <string name="detalle_no_encontrado">Producto no encontrado</string>
+
 </resources>
