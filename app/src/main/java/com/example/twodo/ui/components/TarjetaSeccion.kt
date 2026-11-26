@@ -13,7 +13,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.twodo.R
-import com.example.twodo.ui.pages.PaginaInicio
 import com.example.twodo.ui.theme.TwoDoTheme
 
 data class TarjetaSeccionData  (
