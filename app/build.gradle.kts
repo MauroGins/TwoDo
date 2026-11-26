@@ -64,4 +64,5 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)        // NUEVO
     debugImplementation(libs.androidx.ui.tooling)                  // NUEVO
     debugImplementation(libs.androidx.ui.test.manifest)            // NUEVO
+    implementation(libs.androidx.ui.text.google.fonts)             // NUEVO
 }

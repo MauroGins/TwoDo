@@ -9,6 +9,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.example.twodo.ui.pages.PaginaDetalleProducto
 import com.example.twodo.ui.pages.PaginaFormularioProducto
+import com.example.twodo.ui.pages.PaginaInicio
 import com.example.twodo.ui.pages.PaginaListaCompra
 
 //Nombres de rutas
@@ -17,6 +18,7 @@ object Rutas {
     const val LISTA_COMPRA = "lista_compra"
     const val DETALLE_PRODUCTO = "detalle_producto/{idProducto}"
     const val FORMULARIO_PRODUCTO = "formulario_producto"
+    const val INICIO = "inicio"
 
     fun detalleProducto(id: Int) = "detalle_producto/$id"
 }
@@ -30,9 +32,13 @@ fun TwoDoNavGraph(
 ) {
     NavHost(
         navController = navController,
-        startDestination = Rutas.LISTA_COMPRA,
+        startDestination = Rutas.INICIO,
         modifier = modifier
     ) {
+        //Destino 0
+        composable(Rutas.INICIO){
+            PaginaInicio()
+        }
         //Destino 1 la lista
         composable(Rutas.LISTA_COMPRA) {
             PaginaListaCompra(
