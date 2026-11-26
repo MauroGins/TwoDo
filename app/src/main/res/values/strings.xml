@@ -34,4 +34,8 @@
     <string name="formulario_cantidad">Cantidad</string>
     <string name="formulario_guardar">Guardar</string>
 
+    <!--Navegacion-->
+    <string name="nav_inicio">Inicio</string>
+    <string name="nav_compra">Compra</string>
+
 </resources>

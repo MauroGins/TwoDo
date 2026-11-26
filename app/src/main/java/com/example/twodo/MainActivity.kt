@@ -16,6 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.example.twodo.ui.components.BarraInferior
 import com.example.twodo.ui.components.BarraSuperior
 import com.example.twodo.ui.navigation.Rutas
 import com.example.twodo.ui.navigation.TwoDoNavGraph
@@ -33,6 +34,7 @@ class MainActivity : ComponentActivity() {
                 val rutaActual = entradaActual?.destination?.route
                 val puedeVolver = navController.previousBackStackEntry != null
                 val titulo = when (rutaActual) {
+                    Rutas.INICIO -> stringResource(R.string.app_name)
                     Rutas.DETALLE_PRODUCTO -> stringResource(R.string.titulo_detalle_producto)
                     Rutas.FORMULARIO_PRODUCTO -> stringResource(R.string.titulo_formulario_producto)
                     else -> stringResource(R.string.titulo_lista_compra)
@@ -46,10 +48,23 @@ class MainActivity : ComponentActivity() {
                             onVolver = { navController.navigateUp() }
                         )
                     },
+                    bottomBar = {
+                        if (rutaActual == Rutas.INICIO || rutaActual == Rutas.LISTA_COMPRA) {
+                            BarraInferior(
+                                rutaActual = rutaActual,
+                                onNavegar = { ruta ->
+                                    navController.navigate(ruta) {
+                                        popUpTo(Rutas.INICIO)
+                                        launchSingleTop = true
+                                    }
+                                }
+                            )
+                        }
+                    },
                     floatingActionButton = {
-                        if (rutaActual == Rutas.LISTA_COMPRA){
+                        if (rutaActual == Rutas.LISTA_COMPRA) {
                             FloatingActionButton(
-                                onClick = {navController.navigate(Rutas.FORMULARIO_PRODUCTO)}
+                                onClick = { navController.navigate(Rutas.FORMULARIO_PRODUCTO) }
                             ) {
                                 Icon(
                                     imageVector = Icons.Default.Add,
