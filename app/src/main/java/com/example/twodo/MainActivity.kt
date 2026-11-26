@@ -6,6 +6,10 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
+import androidx.compose.material3.FloatingActionButton
+import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
@@ -30,6 +34,7 @@ class MainActivity : ComponentActivity() {
                 val puedeVolver = navController.previousBackStackEntry != null
                 val titulo = when (rutaActual) {
                     Rutas.DETALLE_PRODUCTO -> stringResource(R.string.titulo_detalle_producto)
+                    Rutas.FORMULARIO_PRODUCTO -> stringResource(R.string.titulo_formulario_producto)
                     else -> stringResource(R.string.titulo_lista_compra)
                 }
                 Scaffold(
@@ -40,6 +45,18 @@ class MainActivity : ComponentActivity() {
                             puedeVolver = puedeVolver,
                             onVolver = { navController.navigateUp() }
                         )
+                    },
+                    floatingActionButton = {
+                        if (rutaActual == Rutas.LISTA_COMPRA){
+                            FloatingActionButton(
+                                onClick = {navController.navigate(Rutas.FORMULARIO_PRODUCTO)}
+                            ) {
+                                Icon(
+                                    imageVector = Icons.Default.Add,
+                                    contentDescription = stringResource(R.string.titulo_formulario_producto)
+                                )
+                            }
+                        }
                     }) { innerPadding ->
                     TwoDoNavGraph(
                         navController = navController,

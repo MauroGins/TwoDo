@@ -13,6 +13,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.twodo.ui.components.FilaProductoData
 import com.example.twodo.ui.viewmodels.ListaCompraViewModel
 import androidx.compose.foundation.lazy.items
+import androidx.compose.runtime.LaunchedEffect
 import com.example.twodo.ui.components.FilaProducto
 
 @Composable
@@ -21,7 +22,9 @@ fun PaginaListaCompra(
     modifier: Modifier = Modifier,
     viewModel: ListaCompraViewModel = viewModel()
 ) {
-
+    LaunchedEffect(Unit) {
+        viewModel.recargar()
+    }
     val uiState by viewModel.uiState.collectAsState()
     LazyColumn(
         modifier = modifier.fillMaxSize(),

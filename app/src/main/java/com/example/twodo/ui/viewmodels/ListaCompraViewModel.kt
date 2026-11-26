@@ -14,7 +14,7 @@ data class ListaCompraUiState(
 )
 
 //ViewModel
-class ListaCompraViewModel : ViewModel(){
+class ListaCompraViewModel : ViewModel() {
     private val _uiState = MutableStateFlow(
         ListaCompraUiState(
             productos = ProductosRepositorio.obtenerTodos()
@@ -22,13 +22,15 @@ class ListaCompraViewModel : ViewModel(){
     )
     val uiState: StateFlow<ListaCompraUiState> = _uiState.asStateFlow()
 
-    fun onProductoMarcado(id:Int){
+    fun onProductoMarcado(id: Int) {
         ProductosRepositorio.cambiarComprado(id)
         _uiState.update { estado ->
             estado.copy(productos = ProductosRepositorio.obtenerTodos())
-
-
-
+        }
+    }
+    fun recargar(){
+        _uiState.update { estado ->
+            estado.copy(productos = ProductosRepositorio.obtenerTodos())
         }
     }
 }
