@@ -20,6 +20,7 @@ import androidx.compose.material3.FilterChip
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -35,8 +36,10 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.twodo.R
+import com.example.twodo.ui.theme.TwoDoTheme
 
 @Composable
 fun PaginaMuestrario(modifier: Modifier = Modifier) {
@@ -121,11 +124,21 @@ fun PaginaMuestrario(modifier: Modifier = Modifier) {
             label = { Text(stringResource(R.string.muestrario_correo)) },
             isError = !correoValido,
             supportingText = {
-                if(!correoValido){
+                if (!correoValido) {
                     Text(stringResource(R.string.muestrario_correo_error))
                 }
             },
-            modifier= Modifier.fillMaxWidth()
-            )
+            modifier = Modifier.fillMaxWidth()
+        )
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun PaginaMuestrarioPreview() {
+    Surface() {
+        TwoDoTheme {
+            PaginaMuestrario()
+        }
     }
 }
