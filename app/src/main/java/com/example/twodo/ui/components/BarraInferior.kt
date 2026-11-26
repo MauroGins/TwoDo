@@ -3,6 +3,7 @@ package com.example.twodo.ui.components
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.ShoppingCart
+import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -33,6 +34,13 @@ fun BarraInferior(
             onClick = {onNavegar(Rutas.LISTA_COMPRA)},
             icon = { Icon(Icons.Default.ShoppingCart, contentDescription = null) },
             label = { Text(stringResource(R.string.nav_compra)) }
+        )
+        NavigationBarItem(
+            selected = rutaActual == Rutas.MUESTRARIO,
+            onClick = {onNavegar(Rutas.MUESTRARIO)},
+            icon = {Icon(Icons.Default.Star, contentDescription = null) },
+            label = {Text(stringResource(R.string.nav_muestrario))}
+
         )
     }
 }
