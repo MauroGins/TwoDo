@@ -40,13 +40,15 @@
     <string name="muestrario_destacado">Destacado</string>
     <string name="muestrario_favorito">Favorito</string>
     <string name="muestrario_imagen">Imagen de ejemplo</string>
+    <string name="muestrario_urgente">Marcar como urgente</string>
+    <string name="muestrario_correo">Correo electrónico</string>
+    <string name="muestrario_correo_error">El correo debe contener @</string>
 
     <!--Navegacion-->
     <string name="nav_inicio">Inicio</string>
     <string name="nav_compra">Compra</string>
 
     <!--Arrays-->
-
     <string-array name="muestrario_categorias">
         <item>Todo</item>
         <item>Frutas</item>
@@ -54,5 +56,7 @@
         <item>Limpieza</item>
         <item>Bebidas</item>
     </string-array>
+
+
 
 </resources>
