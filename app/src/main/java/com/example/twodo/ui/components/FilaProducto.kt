@@ -1,16 +1,23 @@
 package com.example.twodo.ui.components
 
+
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material3.Checkbox
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.twodo.ui.theme.TwoDoTheme
+import com.example.twodo.R
 
 data class FilaProductoData(
     val id: Int,
@@ -22,20 +29,31 @@ data class FilaProductoData(
 @Composable
 fun FilaProducto(
     data: FilaProductoData,
-    onMarcar:()-> Unit,
-    onPulsar:()-> Unit,
+    onMarcar: () -> Unit,
+    onPulsar: () -> Unit,
+    onBorrar: () -> Unit,
     modifier: Modifier = Modifier
-){
+) {
     Row(
-        modifier= modifier.fillMaxWidth().clickable{onPulsar()},
+        modifier = modifier
+            .fillMaxWidth()
+            .clickable { onPulsar() },
         verticalAlignment = Alignment.CenterVertically
     ) {
         Checkbox(
             checked = data.comprado,
-            onCheckedChange = {onMarcar()}
+            onCheckedChange = { onMarcar() }
         )
-        Text(data.nombre, modifier =Modifier.weight(1f))
+        Text(data.nombre, modifier = Modifier.weight(1f))
         Text(data.cantidad, color = MaterialTheme.colorScheme.onSurfaceVariant)
+
+        IconButton(onClick = onBorrar) {
+            Icon(
+                imageVector = Icons.Default.Delete,
+                contentDescription = stringResource(R.string.borrar_producto)
+            )
+        }
+
     }
 }
 
@@ -51,7 +69,8 @@ fun FilaProductoPreview() {
                 comprado = true
             ),
             onMarcar = { },
-            onPulsar = { }
+            onPulsar = { },
+            onBorrar = { }
         )
     }
 }
