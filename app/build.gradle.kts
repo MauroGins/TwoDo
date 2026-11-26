@@ -60,7 +60,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation(platform(libs.androidx.compose.bom)) // NUEVO
     androidTestImplementation(libs.androidx.ui.test.junit4)        // NUEVO
     debugImplementation(libs.androidx.ui.tooling)                  // NUEVO
     debugImplementation(libs.androidx.ui.test.manifest)            // NUEVO
