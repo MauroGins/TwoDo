@@ -22,6 +22,7 @@ import com.example.twodo.ui.navigation.Rutas
 import com.example.twodo.ui.navigation.TwoDoNavGraph
 import com.example.twodo.ui.theme.TwoDoTheme
 
+
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
