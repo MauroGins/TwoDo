@@ -34,6 +34,13 @@
     <string name="formulario_cantidad">Cantidad</string>
     <string name="formulario_guardar">Guardar</string>
 
+    <!--Muestrario-->
+    <string name="nav_muestrario">Ejemplos</string>
+    <string name="titulo_muestrario">Muestrario</string>
+    <string name="muestrario_destacado">Destacado</string>
+    <string name="muestrario_favorito">Favorito</string>
+    <string name="muestrario_imagen">Imagen de ejemplo</string>
+
     <!--Navegacion-->
     <string name="nav_inicio">Inicio</string>
     <string name="nav_compra">Compra</string>

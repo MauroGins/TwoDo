@@ -32,8 +32,9 @@ class MainActivity : ComponentActivity() {
                 val navController = rememberNavController()
                 val entradaActual by navController.currentBackStackEntryAsState()
                 val rutaActual = entradaActual?.destination?.route
-                val puedeVolver = navController.previousBackStackEntry != null
+                val puedeVolver = rutaActual ==Rutas.DETALLE_PRODUCTO || rutaActual == Rutas.FORMULARIO_PRODUCTO
                 val titulo = when (rutaActual) {
+                    Rutas.MUESTRARIO -> stringResource(R.string.titulo_muestrario)
                     Rutas.INICIO -> stringResource(R.string.app_name)
                     Rutas.DETALLE_PRODUCTO -> stringResource(R.string.titulo_detalle_producto)
                     Rutas.FORMULARIO_PRODUCTO -> stringResource(R.string.titulo_formulario_producto)
@@ -49,7 +50,7 @@ class MainActivity : ComponentActivity() {
                         )
                     },
                     bottomBar = {
-                        if (rutaActual == Rutas.INICIO || rutaActual == Rutas.LISTA_COMPRA) {
+                        if (rutaActual == Rutas.INICIO || rutaActual == Rutas.LISTA_COMPRA || rutaActual == Rutas.MUESTRARIO) {
                             BarraInferior(
                                 rutaActual = rutaActual,
                                 onNavegar = { ruta ->

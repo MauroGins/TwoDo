@@ -11,6 +11,7 @@ import com.example.twodo.ui.pages.PaginaDetalleProducto
 import com.example.twodo.ui.pages.PaginaFormularioProducto
 import com.example.twodo.ui.pages.PaginaInicio
 import com.example.twodo.ui.pages.PaginaListaCompra
+import com.example.twodo.ui.pages.PaginaMuestrario
 
 //Nombres de rutas
 
@@ -19,6 +20,7 @@ object Rutas {
     const val DETALLE_PRODUCTO = "detalle_producto/{idProducto}"
     const val FORMULARIO_PRODUCTO = "formulario_producto"
     const val INICIO = "inicio"
+    const val MUESTRARIO = "muestrario"
 
     fun detalleProducto(id: Int) = "detalle_producto/$id"
 }
@@ -63,6 +65,10 @@ fun TwoDoNavGraph(
             PaginaFormularioProducto(
                 onGuardado = { navController.navigateUp() }
             )
+        }
+        //Destino 4 muestrario
+        composable(Rutas.MUESTRARIO){
+            PaginaMuestrario()
         }
     }
 }
