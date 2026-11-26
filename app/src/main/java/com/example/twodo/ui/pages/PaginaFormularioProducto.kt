@@ -16,7 +16,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.twodo.R
 import com.example.twodo.ui.viewmodels.FormularioProductoViewModel
-import java.lang.reflect.Modifier
+
 
 @Composable
 fun PaginaFormularioProducto(
