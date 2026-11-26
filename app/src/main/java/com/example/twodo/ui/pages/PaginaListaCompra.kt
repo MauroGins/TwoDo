@@ -37,7 +37,8 @@ fun PaginaListaCompra(
             FilaProducto(
                 data = producto,
                 onMarcar = { viewModel.onProductoMarcado(producto.id) },
-                onPulsar = { onProductoPulsado(producto.id) }
+                onPulsar = { onProductoPulsado(producto.id) },
+                onBorrar = { viewModel.onProductoBorrado(producto.id)}
             )
         }
     }

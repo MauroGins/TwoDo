@@ -33,6 +33,7 @@
     <string name="formulario_nombre">Nombre</string>
     <string name="formulario_cantidad">Cantidad</string>
     <string name="formulario_guardar">Guardar</string>
+    <string name="borrar_producto">Borrar</string>
 
     <!--Muestrario-->
     <string name="nav_muestrario">Ejemplos</string>

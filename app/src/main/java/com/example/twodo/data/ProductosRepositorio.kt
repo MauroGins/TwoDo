@@ -32,5 +32,9 @@ object ProductosRepositorio {
             comprado = false
         )
     }
+    fun borrar(id: Int ){
+        productos = productos.filter { it.id != id }
+
+    }
 
 }
