@@ -45,4 +45,14 @@
     <string name="nav_inicio">Inicio</string>
     <string name="nav_compra">Compra</string>
 
+    <!--Arrays-->
+
+    <string-array name="muestrario_categorias">
+        <item>Todo</item>
+        <item>Frutas</item>
+        <item>Lácteos</item>
+        <item>Limpieza</item>
+        <item>Bebidas</item>
+    </string-array>
+
 </resources>

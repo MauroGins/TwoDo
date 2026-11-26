@@ -9,26 +9,33 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
+import androidx.compose.material3.FilterChip
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.example.twodo.R
 
 @Composable
-fun PaginaMuestrario(modifier: Modifier = Modifier){
+fun PaginaMuestrario(modifier: Modifier = Modifier) {
     Column(
         modifier = modifier
             .fillMaxSize()
@@ -63,12 +70,24 @@ fun PaginaMuestrario(modifier: Modifier = Modifier){
             Text(
                 text = stringResource(R.string.muestrario_destacado),
                 color = MaterialTheme.colorScheme.onPrimary,
-                modifier= Modifier
+                modifier = Modifier
                     .align(Alignment.BottomStart)
                     .padding(12.dp)
                     .background(MaterialTheme.colorScheme.primary, RoundedCornerShape(8.dp))
                     .padding(horizontal = 8.dp, vertical = 4.dp)
             )
+        }
+        val categorias = stringArrayResource(R.array.muestrario_categorias)
+        var seleccionada by remember { mutableIntStateOf(0) }
+
+        LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            items(categorias.size) { indice ->
+                FilterChip(
+                    selected = indice == seleccionada,
+                    onClick = { seleccionada = indice },
+                    label = { Text(categorias[indice]) }
+                )
+            }
         }
     }
 }
