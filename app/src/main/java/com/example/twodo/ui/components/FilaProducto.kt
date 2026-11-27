@@ -1,9 +1,15 @@
 package com.example.twodo.ui.components
 
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.paddingFrom
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material3.Checkbox
@@ -14,8 +20,12 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.example.twodo.ui.theme.TwoDoTheme
 import com.example.twodo.R
 
@@ -23,7 +33,8 @@ data class FilaProductoData(
     val id: Int,
     val nombre: String,
     val cantidad: String,
-    val comprado: Boolean
+    val comprado: Boolean,
+    val imagen: Int = R.drawable.ic_launcher_background
 )
 
 @Composable
@@ -44,6 +55,13 @@ fun FilaProducto(
             checked = data.comprado,
             onCheckedChange = { onMarcar() }
         )
+        Image(painter = painterResource(data.imagen),
+            contentDescription = null,
+            contentScale = ContentScale.Crop,
+            modifier = Modifier
+                .size(40.dp)
+                .clip(CircleShape))
+        Spacer(Modifier.width(12.dp))
         Text(data.nombre, modifier = Modifier.weight(1f))
         Text(data.cantidad, color = MaterialTheme.colorScheme.onSurfaceVariant)
 
