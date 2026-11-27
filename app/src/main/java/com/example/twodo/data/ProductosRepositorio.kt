@@ -4,10 +4,10 @@ import com.example.twodo.ui.components.FilaProductoData
 
 object ProductosRepositorio {
     private var productos = listOf(
-        FilaProductoData(id = 1, nombre = "Leche", cantidad = "x2", comprado = false),
-        FilaProductoData(id = 2, nombre = "Arroz", cantidad = "x1", comprado = false),
-        FilaProductoData(id = 3, nombre = "Naranjas", cantidad = "x4", comprado = false),
-        FilaProductoData(id = 4, nombre = "Plátanos", cantidad = "x4", comprado = false)
+        FilaProductoData(id = 1, nombre = "Leche", cantidad = "2", comprado = false),
+        FilaProductoData(id = 2, nombre = "Arroz", cantidad = "1", comprado = false),
+        FilaProductoData(id = 3, nombre = "Naranjas", cantidad = "4", comprado = false),
+        FilaProductoData(id = 4, nombre = "Plátanos", cantidad = "4", comprado = false)
     )
 
     fun obtenerTodos(): List<FilaProductoData> = productos

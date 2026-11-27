@@ -10,7 +10,8 @@ import kotlinx.coroutines.flow.update
 data class FormularioProductoUiState(
     val nombre: String = "",
     val cantidad: String = "",
-    val idProducto: Int? = null
+    val idProducto: Int? = null,
+    val errorCantidad: Boolean = false
 )
 
 class FormularioProductoViewModel : ViewModel() {
@@ -22,7 +23,13 @@ class FormularioProductoViewModel : ViewModel() {
     }
 
     fun onCantidadCambiada(texto: String) {
-        _uiState.update { it.copy(cantidad = texto) }
+        _uiState.update {
+            it.copy(
+                cantidad = texto,
+                errorCantidad = texto.isBlank()
+            )
+        }
+
     }
 
     fun onGuardar() {
@@ -30,9 +37,10 @@ class FormularioProductoViewModel : ViewModel() {
         if (estado.idProducto == null) {
             ProductosRepositorio.anadir(estado.nombre, estado.cantidad)
         } else {
-            ProductosRepositorio.actualizar(estado.idProducto,estado.nombre,estado.cantidad)
-            }
-        _uiState.update { FormularioProductoUiState()
+            ProductosRepositorio.actualizar(estado.idProducto, estado.nombre, estado.cantidad)
+        }
+        _uiState.update {
+            FormularioProductoUiState()
         }
     }
 
