@@ -1,13 +1,14 @@
 package com.example.twodo.data
 
+import com.example.twodo.R
 import com.example.twodo.ui.components.FilaProductoData
 
 object ProductosRepositorio {
     private var productos = listOf(
-        FilaProductoData(id = 1, nombre = "Leche", cantidad = "2", comprado = false),
-        FilaProductoData(id = 2, nombre = "Arroz", cantidad = "1", comprado = false),
-        FilaProductoData(id = 3, nombre = "Naranjas", cantidad = "4", comprado = false),
-        FilaProductoData(id = 4, nombre = "Plátanos", cantidad = "4", comprado = false)
+        FilaProductoData(id = 1, nombre = "Leche", cantidad = "2", comprado = false, imagen = R.drawable.leche),
+        FilaProductoData(id = 2, nombre = "Arroz", cantidad = "1", comprado = false, imagen = R.drawable.arroz),
+        FilaProductoData(id = 3, nombre = "Naranjas", cantidad = "4", comprado = false, imagen = R.drawable.naranjas),
+        FilaProductoData(id = 4, nombre = "Plátanos", cantidad = "4", comprado = false, imagen = R.drawable.platanos)
     )
 
     fun obtenerTodos(): List<FilaProductoData> = productos
