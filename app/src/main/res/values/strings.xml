@@ -46,6 +46,7 @@
     <string name="muestrario_correo_error">El correo debe contener @</string>
     <string name="titulo_editar_producto">Editar producto</string>
     <string name="detalle_editar">Editar</string>
+    <string name= "formulario_error_cantidad">La cantidad no puede estar vacía</string>
 
     <!--Navegacion-->
     <string name="nav_inicio">Inicio</string>

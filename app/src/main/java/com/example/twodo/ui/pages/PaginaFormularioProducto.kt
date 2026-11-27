@@ -51,6 +51,12 @@ fun PaginaFormularioProducto(
             value = uiState.cantidad,
             onValueChange = viewModel::onCantidadCambiada,
             label = { Text(stringResource(R.string.formulario_cantidad)) },
+            isError = uiState.errorCantidad,
+            supportingText = {
+                if(uiState.errorCantidad){
+                    Text(stringResource(R.string.formulario_error_cantidad))
+                }
+            },
             modifier = Modifier.fillMaxWidth()
         )
         Button(
@@ -58,7 +64,7 @@ fun PaginaFormularioProducto(
                 viewModel.onGuardar()
                 onGuardado()
             },
-            enabled = uiState.nombre.isNotBlank(),
+            enabled = uiState.nombre.isNotBlank() && uiState.cantidad.isNotBlank(),
             modifier = Modifier.fillMaxWidth()
         ) {
             Text(stringResource(R.string.formulario_guardar))
