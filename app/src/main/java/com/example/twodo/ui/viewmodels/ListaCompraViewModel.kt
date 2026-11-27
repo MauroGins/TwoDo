@@ -28,15 +28,18 @@ class ListaCompraViewModel : ViewModel() {
             estado.copy(productos = ProductosRepositorio.obtenerTodos())
         }
     }
-    fun recargar(){
+
+    fun recargar() {
         _uiState.update { estado ->
             estado.copy(productos = ProductosRepositorio.obtenerTodos())
         }
     }
+
     fun onProductoBorrado(id: Int) {
         ProductosRepositorio.borrar(id)
         _uiState.update { estado ->
             estado.copy(productos = ProductosRepositorio.obtenerTodos())
         }
     }
+
 }

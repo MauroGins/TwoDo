@@ -44,6 +44,8 @@
     <string name="muestrario_urgente">Marcar como urgente</string>
     <string name="muestrario_correo">Correo electrónico</string>
     <string name="muestrario_correo_error">El correo debe contener @</string>
+    <string name="titulo_editar_producto">Editar producto</string>
+    <string name="detalle_editar">Editar</string>
 
     <!--Navegacion-->
     <string name="nav_inicio">Inicio</string>
