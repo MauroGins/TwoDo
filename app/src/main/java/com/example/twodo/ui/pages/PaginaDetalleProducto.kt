@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ShoppingCart
+import androidx.compose.material3.Button
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -21,12 +22,14 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.twodo.R
+import com.example.twodo.ui.navigation.Rutas
 import com.example.twodo.ui.theme.TwoDoTheme
 import com.example.twodo.ui.viewmodels.DetalleProductoViewModel
 
 @Composable
 fun PaginaDetalleProducto(
     idProducto: Int,
+    onEditar: () -> Unit,
     modifier: Modifier = Modifier,
     viewModel: DetalleProductoViewModel = viewModel()
 ) {
@@ -61,6 +64,8 @@ fun PaginaDetalleProducto(
                 else stringResource(R.string.detalle_pendiente),
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
+            Button(onClick = onEditar)
+            { Text(stringResource(R.string.detalle_editar)) }
         }
     }
 }
@@ -71,7 +76,7 @@ fun PaginaDetalleProducto(
 fun PaginaDetalleProductoPreview() {
     TwoDoTheme {
         Surface {
-            PaginaDetalleProducto(idProducto = 1)
+            PaginaDetalleProducto(idProducto = 1, onEditar = {})
         }
     }
 }

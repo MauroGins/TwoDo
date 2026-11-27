@@ -32,8 +32,9 @@ class MainActivity : ComponentActivity() {
                 val navController = rememberNavController()
                 val entradaActual by navController.currentBackStackEntryAsState()
                 val rutaActual = entradaActual?.destination?.route
-                val puedeVolver = rutaActual ==Rutas.DETALLE_PRODUCTO || rutaActual == Rutas.FORMULARIO_PRODUCTO
+                val puedeVolver = rutaActual ==Rutas.DETALLE_PRODUCTO || rutaActual == Rutas.FORMULARIO_PRODUCTO || rutaActual == Rutas.EDITAR_PRODUCTO
                 val titulo = when (rutaActual) {
+                    Rutas.EDITAR_PRODUCTO -> stringResource(R.string.titulo_editar_producto)
                     Rutas.MUESTRARIO -> stringResource(R.string.titulo_muestrario)
                     Rutas.INICIO -> stringResource(R.string.app_name)
                     Rutas.DETALLE_PRODUCTO -> stringResource(R.string.titulo_detalle_producto)

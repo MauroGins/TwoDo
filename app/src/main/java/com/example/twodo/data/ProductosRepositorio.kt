@@ -36,5 +36,11 @@ object ProductosRepositorio {
         productos = productos.filter { it.id != id }
 
     }
-
+    fun actualizar(id:Int, nombre: String, cantidad: String)
+    {
+        productos = productos.map{
+            if (it.id == id) it.copy(nombre = nombre, cantidad = cantidad)
+            else it
+        }
+    }
 }

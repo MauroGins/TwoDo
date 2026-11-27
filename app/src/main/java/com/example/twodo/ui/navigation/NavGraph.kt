@@ -21,6 +21,9 @@ object Rutas {
     const val FORMULARIO_PRODUCTO = "formulario_producto"
     const val INICIO = "inicio"
     const val MUESTRARIO = "muestrario"
+    const val EDITAR_PRODUCTO = "editar_producto/{idProducto}"
+
+    fun editarProducto(id: Int) = "editar_producto/$id"
 
     fun detalleProducto(id: Int) = "detalle_producto/$id"
 }
@@ -38,7 +41,7 @@ fun TwoDoNavGraph(
         modifier = modifier
     ) {
         //Destino 0
-        composable(Rutas.INICIO){
+        composable(Rutas.INICIO) {
             PaginaInicio()
         }
         //Destino 1 la lista
@@ -58,7 +61,7 @@ fun TwoDoNavGraph(
                 })
         ) { entrada ->
             val id = entrada.arguments?.getInt("idProducto") ?: 0
-            PaginaDetalleProducto(idProducto = id)
+            PaginaDetalleProducto(idProducto = id, onEditar = {navController.navigate(Rutas.editarProducto(id))})
         }
         //Destino 3 el formulario
         composable(Rutas.FORMULARIO_PRODUCTO) {
@@ -67,8 +70,19 @@ fun TwoDoNavGraph(
             )
         }
         //Destino 4 muestrario
-        composable(Rutas.MUESTRARIO){
+        composable(Rutas.MUESTRARIO) {
             PaginaMuestrario()
+        }
+        //Destino 5 Editar producto
+        composable(
+            route = Rutas.EDITAR_PRODUCTO,
+            arguments = listOf(
+                navArgument("idProducto") {
+                    type = NavType.IntType
+                })
+        ) { entrada ->
+            val id = entrada.arguments?.getInt("idProducto") ?: 0
+            PaginaFormularioProducto(idProducto = id, onGuardado = { navController.navigateUp() })
         }
     }
 }
